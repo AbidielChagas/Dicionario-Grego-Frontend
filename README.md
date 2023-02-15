@@ -1,27 +1,85 @@
-# Dicio
+# DicionarioGrego
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+<div>
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+</div>
 
-## Development server
+# Abouth the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://dicionariogrego.com
 
-## Code scaffolding
+Dicionariogrego.com is a digitalized version of the Dictionary Greek-Portuguese by Isidro Pereira, the dataset for this project was built using Tesseract OCR, the data was filtered and reviewed with python scripts to ensure the diacritics where in the correct place. <br>The dataset was also proofread to ensure the scripts ran accordingly.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Web Layout 
 
-## Build
+<img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710310/dicionariogrego/webhome_ublok9.gif"/>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<details><summary>Web Layout</summary>
+<p>
+  Home page
+  <img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710309/dicionariogrego/webhome_ng9n2g.png"/>
+  How to use page
+  <img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710310/dicionariogrego/homehowto_aqed9d.png"/>
+  Contact page
+  <img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710309/dicionariogrego/homecontact_xj3wam.png"/>
+</p>
+</details>
 
-## Running unit tests
+### Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Virtual Keyboard
 
-## Running end-to-end tests
+<img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710311/dicionariogrego/keyboard_ggwysp.gif"/>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<details><summary>Keyboard</summary>
+<p>
+  Draggable virtual keyboard, to help write letters in case one does remember the location of a specific letter.
+<img src="https://dicionariogrego.com/assets/images/keyboard-layout.png"/>
+</p>
+</details>
 
-## Further help
+#### Zoom-in
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710310/dicionariogrego/zoom-in_nrrdi3.gif"/>
+
+<details><summary>Zoom-in</summary>
+<p>
+  Zoom-in feature to help visualize diacritics<br>
+<img src="https://dicionariogrego.com/assets/images/zoom-in.png"/>
+</p>
+</details>
+
+## Mobile Layout
+<div>
+  <img src="https://res.cloudinary.com/dsques4uz/image/upload/v1675710310/dicionariogrego/mobilehome_b0fpjk.png"/>
+</div>
+
+## How to use
+The search needs to be done in lowercase and without any diacritics, the front-end will force the input to lowercase and replace the latin characters of the keyboard for the correspondant Greek ones, thus replacing a for α, b for β and so on.<br>The layout for replacing is the same for Virtual Keyboard. The search can also be done using the native Greek keyboard, but keep in mind that the search has to be done in lower case and without any diacritics.
+
+## Technologies used
+
+- HTML / CSS / TypeScript / JavaScript 
+- Angular
+
+# Running the project locally
+
+## Front end
+Pre-requesites: Angular 12+ & npm / yarn
+
+```bash
+# clone repository
+git clone https://github.com/abidielchagas/dicionariogrego
+
+# install dependencies
+yarn install
+
+# run project
+yarn start
+```
+
+# Author
+
+#### Abidiel Chagas
+
+https://linkedin.com/in/abidiel-chagas-562286134/
