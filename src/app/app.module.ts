@@ -14,6 +14,7 @@ import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.direc
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { ContactComponent } from './contact/contact.component';
 import { HowToUseComponent } from './how-to-use/how-to-use.component';
+import { WordResultComponent } from './word-result/word-result.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HowToUseComponent } from './how-to-use/how-to-use.component';
     FreeDraggingHandleDirective,
     KeyboardComponent,
     ContactComponent,
-    HowToUseComponent
+    HowToUseComponent,
+    WordResultComponent
   ],
   imports: [
     BrowserModule,

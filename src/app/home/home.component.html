@@ -32,6 +32,7 @@
       <p class="query-result">Resultado da busca: <strong>{{query}}</strong></p>
       <p class="not-found" *ngIf="results.length < 1 && hasQuery">Sorry. Nothing Found</p>
       <div class="queryresults" *ngFor="let result of results">
+        <app-word-result [word]="result" ></app-word-result>
       </div>
       </section>
   </div>

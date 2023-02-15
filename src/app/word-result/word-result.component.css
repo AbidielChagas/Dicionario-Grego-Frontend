@@ -1,0 +1,131 @@
+/* Body */
+.word{
+    margin-top: 5px;
+    max-width: fit-content;
+    width: 100%;
+}
+.word-info{
+    text-align: right;
+    width: 100%;
+}
+/* List */
+.list-group{
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 600px;
+    width: 95%;
+}
+.list-group-item{
+    background-color: #fdfdfd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    margin-bottom: -1px;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+}
+.list-items{
+    background-color: #fefefe;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    display: flex;
+    margin-bottom: -1px;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+}
+
+/* Items */
+li {
+    font-size: 17px;
+    list-style-type: none;
+}
+
+.slide-fade li {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+.slide-fade li.show {
+  opacity: 1;
+}
+.badge{
+    border-radius: 0.25rem;
+    display: inline-block;
+    font-size: 85%;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.30em 0.8em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+    .primary{
+        /* background-color: #007bff; */
+        border: 1px solid black;
+        color: black;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    .secondary{
+        /* background-color: #6c757d; */
+        border: 1px solid black;
+        color: black;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+/* Typography */
+strong{
+    font-size: 1.10rem;
+}
+
+p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+/* || Header and Main Navigation */
+
+/* Responsive Design */
+@media screen and (max-width: 349px){
+    *{
+        visibility: hidden;
+    }
+}
+
+/*
+Phone device
+*/
+
+@media screen and (min-width: 350px){
+    /* Body */
+    /* List */
+    /* Items */
+    /* Typography */
+}
+
+/*
+Tablet device
+*/
+
+@media screen and (min-width: 700px){
+    /* Body */
+    /* List */
+    /* Items */
+    /* Typography */
+}
+
+/*
+Desktop device
+*/
+
+@media screen and (min-width: 1100px){
+    /* Body */
+    /* List */
+    .list-group:hover{
+        transform: scale(1.2)
+    }
+    /* Items */
+    /* Typography */
+}

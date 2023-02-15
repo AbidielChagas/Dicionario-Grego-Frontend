@@ -1,0 +1,19 @@
+<ul class="list-group">
+    <li *ngIf="word" @fadeSlideInOut class="list-group-item">
+        <div class="word">
+            <span class="word-span">{{word.name}}</span>
+        </div>
+        <div class="word-info">
+                <span *ngIf="word.type" class="badge primary">{{word.type}}</span>
+                <span *ngIf="word.gender" class="badge secondary">{{word.gender}}</span>
+        </div>
+    </li>
+    <li *ngIf="word" @fadeSlideInOut class="list-items">
+        <section>
+            <li *ngIf="word.etimology">Etimologia: {{word.etimology}}</li>
+            <li *ngIf="word.inflection">Inflecção: {{word.inflection}}</li>
+            <li *ngIf="word.observation">Observação: {{word.observation}}</li>
+            <p *ngIf="word.meaning">{{word.meaning}}</p>
+        </section>
+    </li>
+</ul>
