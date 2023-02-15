@@ -13,6 +13,7 @@ import { FreeDraggingDirective } from './shared/free-dragging.directive';
 import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.directive';
 import { KeyboardComponent } from './keyboard/keyboard.component';
 import { ContactComponent } from './contact/contact.component';
+import { HowToUseComponent } from './how-to-use/how-to-use.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     FreeDraggingDirective,
     FreeDraggingHandleDirective,
     KeyboardComponent,
-    ContactComponent
+    ContactComponent,
+    HowToUseComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
      RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'contato', component: ContactComponent},
+      {path: 'como-usar', component: HowToUseComponent},
       {path: '**', component: PageNotFoundComponent},
   ])
   ],
