@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FreeDraggingDirective } from './shared/free-dragging.directive';
 import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.directive';
+import { KeyboardComponent } from './keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.direc
     FooterComponent,
     PageNotFoundComponent,
     FreeDraggingDirective,
-    FreeDraggingHandleDirective
+    FreeDraggingHandleDirective,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule,

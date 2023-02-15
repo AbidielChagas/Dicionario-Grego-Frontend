@@ -150,4 +150,37 @@ export class HomeComponent implements OnInit {
     }
   }
 
+   keyboardEvent(event){
+    if(event == 'Del'){
+      this.delKey()
+      return
+    }
+    if(!this.query){
+      this.query = event
+    }
+    else{
+      this.query += event;
+    }
+    this.input.nativeElement.value = this.query
+    
+    this.DataService.searchName(this.query.trim()).subscribe(result => {
+    this.results = result;
+      this.hasQuery = true;
+    }, error =>{
+      console.log(error);
+    });
+  }
+
+  delKey(){
+    if(this.query){
+      this.query = this.query.slice(0, -1)
+      this.input.nativeElement.value = this.query
+    }
+    if(this.query.length == 0){
+      this.hasQuery = false;
+      this.results = []
+      return
+    }
+  }
+
 }
