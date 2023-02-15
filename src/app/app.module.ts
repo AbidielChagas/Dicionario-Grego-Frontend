@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FreeDraggingDirective } from './shared/free-dragging.directive';
 import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.directive';
 import { KeyboardComponent } from './keyboard/keyboard.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
     PageNotFoundComponent,
     FreeDraggingDirective,
     FreeDraggingHandleDirective,
-    KeyboardComponent
+    KeyboardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { KeyboardComponent } from './keyboard/keyboard.component';
     AppRoutingModule,
      RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: '**', component: PageNotFoundComponent}
+      {path: 'contato', component: ContactComponent},
+      {path: '**', component: PageNotFoundComponent},
   ])
   ],
   providers: [],
