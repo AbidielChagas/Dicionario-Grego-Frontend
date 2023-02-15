@@ -1,0 +1,266 @@
+/* || Keyboard */
+.bondary{
+    position: absolute;
+}
+
+.example-box {
+        width: 525px;
+        height: 225px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: solid 1px #ccc;
+        color: rgba(0, 0, 0, 0.87);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #fff;
+        border-radius: 4px;
+        position: relative;
+        z-index: 1;
+        transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      }
+      .example-box.free-dragging {
+        box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+          0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+      .example-handle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #ccc;
+        cursor: move;
+        width: 24px;
+        height: 24px;
+        bottom: 20px;
+      }
+      .exit-handle {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #ccc;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        bottom: 20px;
+      }
+
+/* Body */
+.body-main{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+/* Input field */
+.main-input {
+        width: 100%;
+        /* position: relative; */
+    }
+     
+    .input-field {
+	    border-radius: 2px;
+	    border: 1px solid #ababab;
+	    color: #ababab;
+	    font-size: 20px;
+	    height: 2.5rem;
+	    line-height: 25px;
+	    margin-top: -7px;
+	    outline: none;
+	    padding: 5px;
+        border-radius: 5px;
+        display: block;
+        outline: none;
+        width: 100%;
+        -moz-border-radius: 2px;
+	    -webkit-border-radius: 2px;
+    }
+     
+    .keyboard-button {
+        border-radius: 5px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        height: 1px;
+        height: 30px;
+        margin-right: 10px;
+        right: 0px;
+        top: 0;
+        top: 2px;
+    }
+
+    input#main-input:hover {
+	    border: 1px solid #36a2d2;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	    color: #3b3b3b;
+        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.query-result{
+    border-bottom: dotted;
+    border-width: 1px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.not-found{
+    margin-top: 15px;
+}
+
+/* About Field */
+.about{
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    .about-header{
+    font-family: 'Playfair Display', serif;
+    border-top: dotted;
+    border-width: 1px;
+    margin-top: 20px;
+    }
+    
+
+/* Typography */
+
+h1{
+    border-width:  1px;
+    font-size:  2rem;
+    /* padding-bottom: 10px; */
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    border-bottom: dotted;
+    border-width: 1px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+/* || Header and Main Navigation */
+
+/* */
+
+/* Responsive Design */
+@media screen and (max-width: 349px){
+    *{
+        visibility: hidden;
+    }
+}
+
+/*
+Phone device
+*/
+
+@media screen and (min-width: 350px){
+    /* Body */
+    .outer{
+        width: 100%;
+    }
+    /* Input Field */
+    .main-input{
+        margin: auto;
+        width: 90%;
+    }
+
+    .input-field{
+        width: 100%;
+    }
+
+    .keyboard-button{
+        visibility: hidden;
+    }
+    /* About Field */
+    /* Typography */
+    h1{
+        font-size: 7vw;
+    }
+    h4{
+        font-size: 4vw;
+        text-align: center;
+    
+    }
+
+}
+
+/*
+Tablet device
+*/
+
+@media screen and (min-width: 700px){
+    /* Body */
+    .outer{
+        margin: auto;
+        width: 90%;
+    }
+    /* Input Field */
+    .main-input{
+        margin: auto;
+        width: 75%;
+    }
+    .keyboard-button{
+        visibility: hidden;
+    }
+    /* About Field */
+    /* Typography */
+    h1{
+        font-size: 5.5vw;
+    }
+    h4{
+        font-size: 2.5vw;
+    }
+}
+
+/*
+Desktop device
+*/
+
+@media screen and (min-width: 1100px){
+    /* Body */
+    .outer{
+        margin: auto;
+        width: 70%;
+    }
+    /* Input Field */
+    .main-input{
+        margin: auto;
+        width: 600px;
+        position: relative;
+    }
+
+    .keyboard-button{
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        height: 1px;
+        border-radius: 5px;
+        height: 30px;
+        cursor: pointer;
+        color: black;
+        margin-right: 10px;
+    }
+    /* About Field */
+    /* Typography */
+    h1{
+        font-size: 3.125rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    margin-bottom:  30px;
+    margin-top: 15px;
+    text-align: center;
+    }
+    h3{
+        font-size: 1.17rem;
+    }
+}
