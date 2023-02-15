@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FreeDraggingDirective } from './shared/free-dragging.directive';
+import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FreeDraggingDirective,
+    FreeDraggingHandleDirective
   ],
   imports: [
     BrowserModule,
