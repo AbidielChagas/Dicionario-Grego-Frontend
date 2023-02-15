@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { FreeDraggingHandleDirective } from './shared/free-dragging-handle.direc
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
      RouterModule.forRoot([
       {path: '', component: HomeComponent},
