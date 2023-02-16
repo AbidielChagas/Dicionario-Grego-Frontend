@@ -69,7 +69,7 @@ Pre-requesites: Angular 12+ & npm / yarn
 
 ```bash
 # clone repository
-git clone https://github.com/abidielchagas/dicionariogrego
+git clone https://github.com/AbidielChagas/Dicionario-Grego-Frontend.git
 
 # install dependencies
 yarn install
